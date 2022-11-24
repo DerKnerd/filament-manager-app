@@ -1,16 +1,4 @@
-# filament_manager_app
+# Filament Manager
+This is a simple flutter app to manage the filament spools stored in a postgres database filled by this OctoPrint plugin: https://github.com/OllisGit/OctoPrint-FilamentManager 
 
-A simple app to manage filaments stored in a Postgres DB
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app Icon is from here: https://www.flaticon.com/free-icon/3d-printing-filament_4395047?term=filament&page=1&position=20&page=1&position=20&related_id=4395047&origin=style
