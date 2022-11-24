@@ -33,6 +33,7 @@ dependencies:
     sdk: flutter
   postgres:
   material_design_icons_flutter:
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:
