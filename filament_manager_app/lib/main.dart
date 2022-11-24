@@ -819,6 +819,27 @@ class _OverviewPageState extends State<OverviewPage> {
                           spools = spools.where((element) => element.name != spool.name);
                         });
                       },
+                      confirmDismiss: (direction) async {
+                        final dialog = AlertDialog(
+                          title: const Text('Spule löschen?'),
+                          content: Text('Soll die Spule ${spool.name} wirklich gelöscht werden?'),
+                          actions: [
+                            TextButton(
+                              child: const Text('Nein'),
+                              onPressed: () => Navigator.pop(context, false),
+                            ),
+                            TextButton(
+                              child: const Text('Ja'),
+                              onPressed: () => Navigator.pop(context, true),
+                            ),
+                          ],
+                        );
+
+                        return await showDialog(
+                          context: context,
+                          builder: (context) => dialog,
+                        );
+                      },
                       child: ListTile(
                         isThreeLine: true,
                         title: Text(spool.name),
