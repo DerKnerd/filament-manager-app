@@ -320,8 +320,8 @@ class _AddSpoolDialogState extends State<AddSpoolDialog> {
                 substitutionValues: {
                   'profileId': profile?.id,
                   'name': nameController.text,
-                  'cost': double.parse(costController.text),
-                  'weight': double.parse(weightController.text)
+                  'cost': double.parse(costController.text.replaceAll(',', '.')),
+                  'weight': double.parse(weightController.text.replaceAll(',', '.'))
                 },
               );
               navigator.pop();
