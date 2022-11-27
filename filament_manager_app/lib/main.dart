@@ -487,7 +487,7 @@ class _AddProfileDialogState extends State<AddProfileDialog> {
                 keyboardType: TextInputType.text,
               ),
               TextFormField(
-                decoration: const InputDecoration(labelText: 'Dichte in g/m³'),
+                decoration: const InputDecoration(labelText: 'Dichte in g/cm³'),
                 autocorrect: false,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 controller: densityController,
@@ -597,7 +597,7 @@ class _EditProfileDialogState extends State<EditProfileDialog> {
                 keyboardType: TextInputType.text,
               ),
               TextFormField(
-                decoration: const InputDecoration(labelText: 'Dichte in g/m³'),
+                decoration: const InputDecoration(labelText: 'Dichte in g/cm³'),
                 autocorrect: false,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 controller: densityController,
@@ -886,7 +886,7 @@ class _OverviewPageState extends State<OverviewPage> {
                       isThreeLine: true,
                       title: Text('${profile.vendor} ${profile.material}'),
                       subtitle: Text(
-                          'Dichte: ${(profile.density).toStringAsFixed(2)}g/m³\nDurchmesser: ${profile.diameter.toStringAsFixed(2)} €'),
+                          'Dichte: ${(profile.density).toStringAsFixed(2)}g/cm³\nDurchmesser: ${profile.diameter.toStringAsFixed(2)} €'),
                       trailing: IconButton(
                         icon: const Icon(Icons.edit),
                         onPressed: () async {
